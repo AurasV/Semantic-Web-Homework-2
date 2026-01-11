@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Book System</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; }
+        .card { border: 1px solid #ccc; padding: 10px; margin: 10px 0; }
+        form { background: #f4f4f4; padding: 15px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+<h1>Available Books</h1>
+<div th:each="book : ${books}" class="card">
+    <h3 th:text="${book.title}">Title</h3>
+    <a th:href="@{/book-details(uri=${book.uri})}">View Details</a>
+</div>
+
+<hr>
+<h2>Add or Modify a Book (Ex 3)</h2>
+<p><i>To modify Hunger Games, use ID "HungerGames" and change the level.</i></p>
+<form action="/update-book" method="post">
+    ID (e.g., HarryPotter): <input type="text" name="id" required><br><br>
+    Title: <input type="text" name="title" required><br><br>
+    Author: <input type="text" name="author" required><br><br>
+    Genre: <input type="text" name="genre" required><br><br>
+    Reading Level:
+    <select name="level">
+        <option value="Beginner">Beginner</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Advanced">Advanced</option>
+    </select><br><br>
+    <button type="submit">Save Book</button>
+</form>
+
+<br>
+<a href="/visualize">View RDF Graph Visualization (Ex 2)</a>
+
+<div id="chat-widget" style="position:fixed; bottom:20px; right:20px; width:320px; border:2px solid #444; background:white; z-index:9999; border-radius:10px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+    <div style="background:#444; color:white; padding:10px; border-radius:8px 8px 0 0;">Book Assistant</div>
+    <div id="chat-box" style="height:250px; overflow-y:auto; padding:10px; font-size:13px; background:#f9f9f9;"></div>
+
+    <div style="padding:5px; background:#eee; display:flex; gap:5px; flex-wrap:wrap;">
+        <button onclick="sendChat('What is a book I am most likely to enjoy from this list?')">Suggestions</button>
+        <button onclick="sendChat('Which books are Science Fiction?')">Sci-Fi</button>
+        <button onclick="sendChat('What book has the author Frank Herbert?')">Find by Author</button>
+    </div>
+
+    <div style="padding:10px; border-top:1px solid #ddd;">
+        <input type="text" id="chat-input" style="width:70%;" placeholder="Ask...">
+        <button onclick="sendChat()">Send</button>
+    </div>
+</div>
+
+<div id="starters">
+    <button onclick="sendChat('What is a book I am most likely to enjoy?')">Suggestions</button>
+    <button onclick="sendChat('Which books are Science Fiction?')">Sci-Fi</button>
+</div>
+
+
+<script>
+    function sendChat(msg) {
+        let input = document.getElementById('chat-input');
+        let text = msg || input.value;
+        let box = document.getElementById('chat-box');
+
+        box.innerHTML += "<b>You:</b> " + text + "<br>";
+        fetch('/api/chat?message=' + encodeURIComponent(text))
+            .then(res => res.text())
+            .then(data => {
+                box.innerHTML += "<b>Bot:</b> " + data + "<hr>";
+                box.scrollTop = box.scrollHeight;
+            });
+        input.value = "";
+    }
+</script>
+
+</body>
+</html>

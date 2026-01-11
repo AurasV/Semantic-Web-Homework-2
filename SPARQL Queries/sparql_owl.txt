@@ -1,0 +1,59 @@
+Query 1:
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX my: <http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#>
+
+SELECT ?book
+WHERE {
+  ?book rdf:type my:Book .
+}
+
+
+Query 2:
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX my: <http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#>
+
+SELECT ?book ?genre
+WHERE {
+  ?book rdf:type my:Book .
+  ?book my:hasGenre ?genre .
+}
+
+
+Query 3:
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX my: <http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#>
+
+SELECT ?user ?readingLevel
+WHERE {
+  ?user rdf:type my:User .
+  ?user my:hasReadingLevel ?readingLevel .
+}
+
+
+Query 4:
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX my: <http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#>
+
+SELECT ?book
+WHERE {
+  ?book rdf:type my:Book .
+  ?book my:hasReadingLevel my:BeginnerLevel .
+}
+
+
+Query 5:
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX my: <http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#>
+
+SELECT ?user ?book ?genre
+WHERE {
+  ?user rdf:type my:User .
+  ?user my:prefersGenre ?genre .
+  ?book rdf:type my:Book .
+  ?book my:hasGenre ?genre .
+}

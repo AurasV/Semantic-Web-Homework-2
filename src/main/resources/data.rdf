@@ -1,0 +1,45 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:user="http://example.org/user#"
+    xmlns:book="http://example.org/book#">
+  <rdf:Description rdf:about="http://example.org/user/Alice">
+    <user:prefersTheme>Science Fiction</user:prefersTheme>
+    <user:readingLevel>Intermediate</user:readingLevel>
+    <user:name>Alice</user:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/book/HungerGames">
+    <book:author>Suzanne Collins</book:author>
+    <book:level>Beginner</book:level>
+    <book:genre>Science Fiction and Fantasy</book:genre>
+    <book:title>Hunger Games</book:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/book/TheSilentPatient">
+    <book:author>Alex Michaelides</book:author>
+    <book:level>Intermediate</book:level>
+    <book:genre>Mystery and Murder</book:genre>
+    <book:title>The Silent Patient</book:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/user/Bob">
+    <user:prefersTheme>Mystery</user:prefersTheme>
+    <user:readingLevel>Beginner</user:readingLevel>
+    <user:name>Bob</user:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/book/Dune">
+    <book:level>Intermediate</book:level>
+    <book:genre>Sci-Fi, Action</book:genre>
+    <book:title>Dune</book:title>
+    <book:author>Frank Herbert</book:author>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/book/TheManWhoMistookHisWifeforaHat">
+    <book:level>Advanced</book:level>
+    <book:author>Marcel Ciolacu</book:author>
+    <book:title>The Man Who Mistook His Wife for a Hat</book:title>
+    <book:genre>Nonfiction, Psychology, Neurology</book:genre>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/book/HarryPotter">
+    <book:genre>Fantasy and Adventure</book:genre>
+    <book:author>Gigel</book:author>
+    <book:title>Harry Potter</book:title>
+    <book:level>Beginner</book:level>
+  </rdf:Description>
+</rdf:RDF>

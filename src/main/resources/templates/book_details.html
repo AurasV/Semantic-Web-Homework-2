@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Book Information</title>
+    <style>
+        body { font-family: sans-serif; margin: 40px; line-height: 1.6; }
+        .info-box { border: 1px solid #ddd; padding: 20px; border-radius: 8px; max-width: 500px; }
+        .rec-tag { background: #d4edda; color: #155724; padding: 5px 10px; border-radius: 4px; font-weight: bold; }
+    </style>
+</head>
+<body>
+<div class="info-box">
+    <h1 th:text="${title}">Book Title</h1>
+    <p><strong>Author:</strong> <span th:text="${author}"></span></p>
+    <p><strong>Genre:</strong> <span th:text="${genre}"></span></p>
+    <p><strong>Reading Level:</strong> <span th:text="${level}"></span></p>
+
+    <hr>
+    <h3>Recommendations (Ex 1)</h3>
+    <div th:if="${recs.empty}">
+        <p>This book doesn't match Alice's or Bob's current preferences.</p>
+    </div>
+    <div th:if="${!recs.empty}">
+        <p>This book is highly recommended for:
+            <span class="rec-tag" th:each="p : ${recs}" th:text="${p} + ' '"></span>
+        </p>
+    </div>
+</div>
+
+<br>
+<a href="/books">← Back to List</a>
+
+<div id="chat-widget" style="position:fixed; bottom:20px; right:20px; width:320px; border:2px solid #444; background:white; z-index:9999; border-radius:10px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+    <div style="background:#444; color:white; padding:10px; border-radius:8px 8px 0 0;">Book Assistant</div>
+    <div id="chat-box" style="height:250px; overflow-y:auto; padding:10px; font-size:13px; background:#f9f9f9;"></div>
+
+    <div style="padding:5px; background:#eee; display:flex; gap:5px; flex-wrap:wrap;">
+        <button th:data-question="|Who is the author of ${title}?|" onclick="sendChat(this.dataset.question)">Author?</button>
+        <button th:data-question="|What is the genre of ${title}?|" onclick="sendChat(this.dataset.question)">Genre?</button>
+        <button th:data-question="|What is the reading level of ${title}?|" onclick="sendChat(this.dataset.question)">Level?</button>
+    </div>
+
+    <div style="padding:10px; border-top:1px solid #ddd;">
+        <input type="text" id="chat-input" style="width:70%;" placeholder="Ask...">
+        <button onclick="sendChat()">Go</button>
+    </div>
+</div>
+
+<script>
+    function sendChat(msg) {
+        let input = document.getElementById('chat-input');
+        let text = msg || input.value;
+        let box = document.getElementById('chat-box');
+        box.innerHTML += "<b>You:</b> " + text + "<br>";
+        fetch('/api/chat?message=' + encodeURIComponent(text))
+            .then(res => res.text())
+            .then(data => {
+                box.innerHTML += "<b>Bot:</b> " + data + "<hr>";
+                box.scrollTop = box.scrollHeight;
+            });
+        input.value = "";
+    }
+</script>
+</body>
+</html>

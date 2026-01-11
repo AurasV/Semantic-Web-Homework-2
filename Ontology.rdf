@@ -1,0 +1,298 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10/"
+     xml:base="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-10="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#hasGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#hasGenre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#hasGenre"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Book"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#hasGenre"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Genre"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#hasReadingLevel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#hasReadingLevel">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#hasReadingLevel"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Book"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#hasReadingLevel"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#User"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#hasReadingLevel"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#ReadingLevel"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#prefersGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#prefersGenre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#prefersGenre"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#User"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#prefersGenre"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Genre"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Advanced -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Advanced">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#ReadingLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Beginner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Beginner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#ReadingLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Book -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Book"/>
+    
+
+
+    <!-- http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Genre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Intermediate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Intermediate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#ReadingLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Mistery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Mistery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Genre"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Science_Fiction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#ReadingLevel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#ReadingLevel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Science_Fiction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Science_Fiction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#User"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#AdvancedLevel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#AdvancedLevel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#ReadingLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Alice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Alice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#User"/>
+        <untitled-ontology-10:hasReadingLevel rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#IntermediateLevel"/>
+        <untitled-ontology-10:prefersGenre rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#ScienceFiction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#BeginnerLevel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#BeginnerLevel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#ReadingLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Bob -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Bob">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#User"/>
+        <untitled-ontology-10:hasReadingLevel rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#BeginnerLevel"/>
+        <untitled-ontology-10:prefersGenre rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Mystery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Dune -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Dune">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Book"/>
+        <untitled-ontology-10:hasGenre rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#ScienceFiction"/>
+        <untitled-ontology-10:hasReadingLevel rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#AdvancedLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Hunger_Games -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Hunger_Games">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Book"/>
+        <untitled-ontology-10:hasGenre rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#ScienceFiction"/>
+        <untitled-ontology-10:hasReadingLevel rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#BeginnerLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#IntermediateLevel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#IntermediateLevel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#ReadingLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Mystery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Mystery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#ScienceFiction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#ScienceFiction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#The_Silent_Patient -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#The_Silent_Patient">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Book"/>
+        <untitled-ontology-10:hasGenre rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Mystery"/>
+        <untitled-ontology-10:hasReadingLevel rdf:resource="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#IntermediateLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Advanced"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Beginner"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Intermediate"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Book"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#Genre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#ReadingLevel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#User"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

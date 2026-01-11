@@ -1,0 +1,8 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX my: <http://www.semanticweb.org/teodora/ontologies/2026/0/untitled-ontology-10#>
+
+SELECT ?book
+WHERE {
+  ?book rdf:type my:Book .
+  ?book my:hasReadingLevel my:BeginnerLevel .
+}

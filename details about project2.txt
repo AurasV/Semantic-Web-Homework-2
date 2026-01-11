@@ -1,0 +1,2 @@
+- in RDFTester.java am facut prima data cu FileManager dar am schimbat in varianta noua cu RDFDataMgr
+instead of .get() we put .read()

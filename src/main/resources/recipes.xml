@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--<!DOCTYPE cookbook SYSTEM "cookbook.dtd">-->
+<cookbook>
+
+    <recipes>
+
+        <recipe id="0">
+
+            <title>Creamy pumpkin pasta</title>
+
+            <cuisine>Mexican</cuisine>
+
+            <cuisine>American</cuisine>
+
+            <difficulty>Beginner</difficulty>
+
+        </recipe>
+
+        <recipe id="1">
+
+            <title>Sausage, mustard &amp; apple hash</title>
+
+            <cuisine>British</cuisine>
+
+            <cuisine>Mediterranean</cuisine>
+
+            <difficulty>Beginner</difficulty>
+
+        </recipe>
+
+        <recipe id="2">
+
+            <title>Mushroom stroganoff</title>
+
+            <cuisine>Japanese</cuisine>
+
+            <cuisine>French</cuisine>
+
+            <difficulty>Advanced</difficulty>
+
+        </recipe>
+
+        <recipe id="3">
+
+            <title>App onlyButternut squash &amp; white bean tagliatelle.</title>
+
+            <cuisine>Greek</cuisine>
+
+            <cuisine>Italian</cuisine>
+
+            <difficulty>Advanced</difficulty>
+
+        </recipe>
+
+        <recipe id="4">
+
+            <title>Beetroot &amp; feta pasta</title>
+
+            <cuisine>Greek</cuisine>
+
+            <cuisine>Mexican</cuisine>
+
+            <difficulty>Beginner</difficulty>
+
+        </recipe>
+
+        <recipe id="5">
+
+            <title>Pork &amp; apple burgers</title>
+
+            <cuisine>Chinese</cuisine>
+
+            <cuisine>British</cuisine>
+
+            <difficulty>Intermediate</difficulty>
+
+        </recipe>
+
+        <recipe id="6">
+
+            <title>Mushroom soup</title>
+
+            <cuisine>Asian</cuisine>
+
+            <cuisine>French</cuisine>
+
+            <difficulty>Beginner</difficulty>
+
+        </recipe>
+
+        <recipe id="7">
+
+            <title>Squash &amp; halloumi flatbreads with sweet chilli beetroot jam</title>
+
+            <cuisine>Japanese</cuisine>
+
+            <cuisine>American</cuisine>
+
+            <difficulty>Advanced</difficulty>
+
+        </recipe>
+
+        <recipe id="8">
+
+            <title>Simple squash risotto</title>
+
+            <cuisine>Mexican</cuisine>
+
+            <cuisine>American</cuisine>
+
+            <difficulty>Intermediate</difficulty>
+
+        </recipe>
+
+        <recipe id="9">
+
+            <title>App onlyCreamy beans.</title>
+
+            <cuisine>British</cuisine>
+
+            <cuisine>Spanish</cuisine>
+
+            <difficulty>Advanced</difficulty>
+
+        </recipe>
+
+        <recipe id="10">
+
+            <title>Slow cooker spiced root &amp; lentil casserole</title>
+
+            <cuisine>American</cuisine>
+
+            <cuisine>Japanese</cuisine>
+
+            <difficulty>Beginner</difficulty>
+
+        </recipe>
+
+        <recipe id="11">
+
+            <title>Squash &amp; spinach fusilli with pecans</title>
+
+            <cuisine>Asian</cuisine>
+
+            <cuisine>Asian</cuisine>
+
+            <difficulty>Advanced</difficulty>
+
+        </recipe>
+
+        <recipe id="12">
+
+            <title>Easy vegetable curry</title>
+
+            <cuisine>Japanese</cuisine>
+
+            <cuisine>Mexican</cuisine>
+
+            <difficulty>Advanced</difficulty>
+
+        </recipe>
+
+        <recipe id="13">
+
+            <title>Sausage &amp; butternut squash shells</title>
+
+            <cuisine>Indian</cuisine>
+
+            <cuisine>Mexican</cuisine>
+
+            <difficulty>Intermediate</difficulty>
+
+        </recipe>
+
+        <recipe id="14">
+
+            <title>Autumn vegetable soup with cheesy toasts</title>
+
+            <cuisine>French</cuisine>
+
+            <cuisine>Japanese</cuisine>
+
+            <difficulty>Beginner</difficulty>
+
+        </recipe>
+
+        <recipe id="15">
+
+            <title>Mushroom &amp; sausage pasta</title>
+
+            <cuisine>Mexican</cuisine>
+
+            <cuisine>Greek</cuisine>
+
+            <difficulty>Intermediate</difficulty>
+
+        </recipe>
+
+        <recipe id="16">
+
+            <title>Creamy pumpkin &amp; lentil soup</title>
+
+            <cuisine>Indian</cuisine>
+
+            <cuisine>Italian</cuisine>
+
+            <difficulty>Intermediate</difficulty>
+
+        </recipe>
+
+        <recipe id="17">
+
+            <title>Curried parsnip soup</title>
+
+            <cuisine>French</cuisine>
+
+            <cuisine>Asian</cuisine>
+
+            <difficulty>Beginner</difficulty>
+
+        </recipe>
+
+        <recipe id="18">
+
+            <title>Red onion gravy</title>
+
+            <cuisine>Chinese</cuisine>
+
+            <cuisine>Asian</cuisine>
+
+            <difficulty>Intermediate</difficulty>
+
+        </recipe>
+
+        <recipe id="19">
+
+            <title>Butternut squash pilaf</title>
+
+            <cuisine>Indian</cuisine>
+
+            <cuisine>Japanese</cuisine>
+
+            <difficulty>Advanced</difficulty>
+
+        </recipe>
+
+        <recipe id="20">
+
+            <title>Sausage &amp; maple swede traybake</title>
+
+            <cuisine>French</cuisine>
+
+            <cuisine>Italian</cuisine>
+
+            <difficulty>Beginner</difficulty>
+
+        </recipe>
+
+        <recipe id="21">
+
+            <title>Cauliflower mac &amp; cheese</title>
+
+            <cuisine>British</cuisine>
+
+            <cuisine>British</cuisine>
+
+            <difficulty>Beginner</difficulty>
+
+        </recipe>
+
+        <recipe id="22">
+
+            <title>Mustardy pork &amp; apples</title>
+
+            <cuisine>Mexican</cuisine>
+
+            <cuisine>British</cuisine>
+
+            <difficulty>Advanced</difficulty>
+
+        </recipe>
+
+        <recipe id="23">
+
+            <title>App onlyConfit tomatoes with creamy beans.</title>
+
+            <cuisine>British</cuisine>
+
+            <cuisine>British</cuisine>
+
+            <difficulty>Intermediate</difficulty>
+        </recipe>
+    </recipes>
+    <users>
+        <user>
+            <name/>
+            <surname/>
+            <skill>Beginner</skill>
+            <prefCuisine>Italian</prefCuisine>
+        </user>
+    </users>
+</cookbook>

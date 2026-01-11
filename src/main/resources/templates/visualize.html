@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RDF Graph</title>
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <style>#mynetwork { width: 100%; height: 500px; border: 1px solid #ddd; }</style>
+</head>
+<body>
+<h2>RDF Graph Visualization (Ex 2)</h2>
+<div id="mynetwork" style="height: 600px; border: 1px solid lightgray;"></div>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<script>
+    fetch('/api/graph-data').then(res => res.json()).then(data => {
+        var container = document.getElementById('mynetwork');
+        new vis.Network(container, { nodes: new vis.DataSet(data.nodes), edges: new vis.DataSet(data.edges) }, {});
+    });
+</script>
+<a href="/books">Back to Books</a>
+
+<form action="/upload-rdf" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" accept=".rdf,.xml">
+    <button type="submit">Upload & Visualize</button>
+</form>
+
+</body>
+</html>
